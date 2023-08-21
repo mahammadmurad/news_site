@@ -4,10 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Site</title>
-</head>
-<header style="color: aqua; background-color: black; height: 1cm;"><marquee behavior="" direction="">ƏN SON TEXNOLOJİ XƏBƏRLƏR</marquee></header>
-
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="./src/js/main.js"></script>
+</head> 
 <body>
+<div class="container">
+    <div class="navbar">
+        <marquee behavior="" direction="">ƏN SON TEXNOLOJİ XƏBƏRLƏR</marquee>
+        <div class="maham">
+           <p>Technonews.az</p>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>Xəbərlər</li>
+            <li>İcmallar</li>
+            <li>Əlaqə</li>
+            <li><a href="./src/html/login.html" target="_blank">Sign in</a></li>
+        </ul>
+        <button class="open-button" onclick="openForm()">Register</button>
+        
+        <!-- The form -->
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Register</h1>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Name" name="name" required>
+
+                <label for="surname"><b>Surname</b></label>
+                <input type="text" placeholder="Surname" name="surname" required>
+
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Username" name="username" required>
+        
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+        
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw"><b>Re-Password</b></label>
+                <input type="password" placeholder="Re-type Password" name="psw" required>
+        
+                <button type="submit" class="btn">Register</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        <br><br>
+    </div>
+</div>
+
+
+
     <h1><a href="https://technote.az/texnologiya-xeberleri/apple-oz-komputerlerine-face-Id-nin-inteqrasiyasini-nezerden-kecirir" target="_blank">Apple öz kompüterlərinə Face ID-nin inteqrasiyasını nəzərdən keçirir</a></h1>
 
     <img src="./src/img/1.jpg" width="400px" style="align-items: center;" alt="Apple">
@@ -26,37 +75,37 @@
 </body>
 
 
-<footer style="color: aqua; background-color: black; height: 3cm;"><ul style="color: aliceblue;">
-    <li><a href="https://www.linkedin.com/in/mahammad-muradov-aa7666139/" target="_blank">Linkedin</a></li>
-    <li><a href="#">Github</a></li>
-    <li><a href="#">Instagram</a></li>
-    <li><a href="#">Email</a></li>
-</ul>
-<div class="mapouter">
-    <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Ahad Yaqubov&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-            href="https://gachanox.io/">Gacha Nox</a></div>
-    <style>
-        .mapouter {
-            position: relative;
-            text-align: right;
-            width: 600px;
-            height: 400px;
-        }
-
-        .gmap_canvas {
-            overflow: hidden;
-            background: none !important;
-            width: 600px;
-            height: 400px;
-        }
-
-        .gmap_iframe {
-            width: 600px !important;
-            height: 400px !important;
-        }
-    </style>
+<div class="links">
+    <ul>
+        <li><a href="https://www.linkedin.com/in/mahammad-muradov-aa7666139/" target="_blank">Linkedin</a></li>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Email</a></li>
+    </ul>
+    <div class="mapouter">
+        <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Ahad Yaqubov&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></div>
+        <!-- <style>
+            .mapouter {
+                position: relative;
+                text-align: right;
+                width: 600px;
+                height: 400px;
+            }
+    
+            .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                width: 600px;
+                height: 400px;
+            }
+    
+            .gmap_iframe {
+                width: 600px !important;
+                height: 400px !important;
+            }
+        </style> -->
+    </div>
 </div>
 
-</footer>
 </html>
